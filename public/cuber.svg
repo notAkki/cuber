@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="chroma" x1="15" y1="20" x2="49" y2="48" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#87b5ff"/>
+      <stop offset=".52" stop-color="#b9a0ff"/>
+      <stop offset="1" stop-color="#f3a5b7"/>
+    </linearGradient>
+    <mask id="clock-hands" maskUnits="userSpaceOnUse" x="0" y="0" width="64" height="64">
+      <rect width="64" height="64" fill="white"/>
+      <g fill="none" stroke="black" stroke-linecap="round">
+        <path d="M32 31.5 20.5 24.9" stroke-width="4.6"/>
+        <path d="M32 31.5 40.3 26.7" stroke-width="4.6"/>
+        <path d="M32 31.5V46" stroke-width="2.6"/>
+        <circle cx="32" cy="31.5" r="3" fill="black" stroke="none"/>
+      </g>
+    </mask>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="#202329"/>
+  <path d="M29.8 11.2 Q32 10 34.2 11.2 L48.8 19.6 Q51 20.9 51 23.4 V40.6 Q51 43.1 48.8 44.4 L34.2 52.8 Q32 54 29.8 52.8 L15.2 44.4 Q13 43.1 13 40.6 V23.4 Q13 20.9 15.2 19.6 Z" fill="url(#chroma)" mask="url(#clock-hands)"/>
+</svg>
